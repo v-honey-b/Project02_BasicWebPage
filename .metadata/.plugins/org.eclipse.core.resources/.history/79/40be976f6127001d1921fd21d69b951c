@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BOARD DETAIL</title>
+</head>
+<body>
+	<h1>BOARD DETAIL PAGE</h1>
+	<table border="1">
+		<tr>
+			<th>NO.</th>
+			<td>${bvo.bno }</td>
+		</tr>
+		<tr>
+			<th>TITLE</th>
+			<td>${bvo.title }</td>
+		</tr>
+		<tr>
+			<th>WRITER</th>
+			<td>${bvo.writer }</td>
+		</tr>
+		<tr>
+			<th>REG_DATE</th>
+			<td>${bvo.reg_date }</td>
+		</tr>
+		<tr>
+			<th>CONTENT</th>
+			<td>${bvo.content }</td>
+		</tr>
+	</table>
+	<a href="brd/boardmodify?bno=${bvo.bno }">MODIFY</a>
+	<a href="brd/boardremove?bno=${bvo.bno }">DELETE</a>
+	<a href="/brd/boardlist">BOARD LIST</a>
+</body>
+</html>

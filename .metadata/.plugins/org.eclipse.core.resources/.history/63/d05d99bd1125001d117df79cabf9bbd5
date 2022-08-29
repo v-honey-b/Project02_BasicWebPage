@@ -1,0 +1,11 @@
+package service;
+
+import domain.MemberVO;
+
+public interface MemberService {
+
+	int memberregister(MemberVO mvo);
+
+	MemberVO login(MemberVO mvo);
+
+}

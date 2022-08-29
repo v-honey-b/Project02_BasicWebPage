@@ -1,0 +1,23 @@
+package repository;
+
+import org.apache.ibatis.session.SqlSession;
+
+import domain.BoardVO;
+import orm.DatabaseBuilder;
+
+public class BoardDAOImpl implements BoardDAO {
+	private SqlSession sql;
+	private final String NS = "BoardMapper.";	// namespace.id -> sql 요청할 때 NS뒤에 id만 적어서 호출
+	
+	public BoardDAOImpl() {
+		new DatabaseBuilder();
+		sql = DatabaseBuilder.getFactory().openSession();
+	}
+
+	@Override
+	public int boardinsert(BoardVO bvo) {
+		
+		return 0;
+	}
+
+}

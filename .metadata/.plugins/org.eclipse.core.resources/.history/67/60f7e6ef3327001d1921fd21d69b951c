@@ -1,0 +1,17 @@
+package domain;
+
+public class BoardVO {
+
+	private int bno;
+	private String title;
+	private String writer;
+	private String content;
+	private String reg_date;	// date도 String 형식으로 생성
+	
+	public BoardVO() {}
+	
+	// insert (title, writer, content
+	public static BoardVO(String title, String writer, String content) {
+		
+	}
+}
